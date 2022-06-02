@@ -1,0 +1,48 @@
+StaticModelEntity {
+ ID "597B5642E6702B32"
+ components {
+  SoundComponent "{597B564313296C13}" {
+   Filenames {
+    "{1210AB9711D04033}Sounds/Destruction/Trees/Destruction_Tree.acp"
+   }
+  }
+  MeshObject "{597B56432828F6F2}" {
+   Object "{4A41CF9C9A805BB1}Assets/Props/Military/Furniture/US/TableMilitary_US_02.xob"
+   LODFactors {
+    5 2 1.5 1 1 1
+   }
+  }
+  RigidBody "{597B56432828F6C2}" {
+   Mass 10
+   ResponseIndex "HugeDestructible"
+   ModelGeometry 1
+   Static 1
+  }
+  ActionsManagerComponent "{597B564377A0754A}" {
+   ActionContexts {
+    UserActionContext "{597B564376FAED08}" {
+     UIInfo UIInfo "{597B5643720C7481}" {
+     }
+     ContextName "Gather"
+     Position PointInfo "{597B56436F57DBCF}" {
+     }
+     Radius 0.5
+    }
+   }
+   additionalActions {
+    RL_SellItem "{597B564360A4C886}" {
+     ParentContextList {
+      "Sell"
+     }
+     m_SoldItemDisplayName "Marijuana"
+     m_SoldItemPrefab "{4B4BC3D0A955C97B}Prefabs/Items/Food/Weed/Weed.et"
+    }
+   }
+  }
+  RplComponent "{597B5643AEC6DAAD}" {
+  }
+ }
+ coords 4436.117 0.001 11204.587
+ angleY -100.534
+ Flags 524289
+}

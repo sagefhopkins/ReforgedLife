@@ -1,0 +1,28 @@
+GenericEntity : "{4B4BC3D0A955C97B}Prefabs/Items/Food/Weed/Weed.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName UIInfo "{5222EB4D07D865FA}" {
+     Name "Money"
+     Description "A Small Pile of Money"
+     Icon "{2C2AD803FC6EF735}3dModels/Money/tex/stacks_diffuse_no_ao.edds"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.001
+     ItemVolume 0.001
+    }
+    CustomAttributes {
+    }
+    CommonItemType "NONE"
+    m_SlotType SLOT_ANY
+   }
+  }
+  MeshObject "{59652C0ACB87CEB7}" {
+   Object "{2131762EBB61D29C}3dModels/Money/stacks of money.xob"
+   LODScale 1
+  }
+ }
+ coords 4440.566 5.813 11213.977
+ scale 0.075
+}

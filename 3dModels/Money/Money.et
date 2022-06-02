@@ -1,0 +1,10 @@
+GenericEntity {
+ ID "598250DB20E97567"
+ components {
+  MeshObject "{598250DB2A13D087}" {
+   Object "{2131762EBB61D29C}3dModels/Money/stacks of money.xob"
+  }
+ }
+ coords 4438.343 5.813 11213.652
+ scale 0.075
+}

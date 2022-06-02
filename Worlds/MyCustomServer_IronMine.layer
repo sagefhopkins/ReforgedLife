@@ -1,0 +1,21 @@
+Tree RL_IronOre : "{EB1FCEB0BE00DB42}Prefabs/Plants/RL_AppleTree.et" {
+ components {
+  MeshObject "{02E2273E851D0152}" {
+   Object "{1DD3C4030A3F4448}Assets/Rocks/Granite/GraniteBeachStone_01_Fucus.xob"
+  }
+  ActionsManagerComponent "{596540948BBDD481}" {
+   ActionContexts {
+    UserActionContext "{5965409488C45647}" {
+     Radius 1.5
+    }
+   }
+   additionalActions {
+    EL_GatherAction "{59654094806921B6}" {
+     m_GatherItemDisplayName "Iron Bar"
+     m_GatherItemPrefab "{7E65C441726DFB2F}Prefabs/Items/Iron Bar/IronBar.et"
+    }
+   }
+  }
+ }
+ coords 4444.68 0.001 11194.902
+}

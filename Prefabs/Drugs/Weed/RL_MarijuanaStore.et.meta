@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{D212ABF1A21B5A3A}Prefabs/Drugs/Weed/RL_MarijuanaStore.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

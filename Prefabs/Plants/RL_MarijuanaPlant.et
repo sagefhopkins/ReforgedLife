@@ -1,0 +1,17 @@
+Tree : "{EB1FCEB0BE00DB42}Prefabs/Plants/RL_AppleTree.et" {
+ ID "27132768B0952045"
+ components {
+  MeshObject "{02E2273E851D0152}" {
+   Object "{B89423573D7244D4}Assets/Vegetation/Vegetables/TomatoCrop_01.xob"
+  }
+  ActionsManagerComponent "{596540948BBDD481}" {
+   additionalActions {
+    EL_GatherAction "{59654094806921B6}" {
+     m_GatherItemDisplayName "Marijuana"
+     m_GatherItemPrefab "{4B4BC3D0A955C97B}Prefabs/Items/Food/Weed/Weed.et"
+    }
+   }
+  }
+ }
+ coords 4442.177 0.001 11207.246
+}

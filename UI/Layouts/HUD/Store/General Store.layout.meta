@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{BE4D18EF68F97CBC}UI/Layouts/HUD/Store/General Store.layout"
+ Configurations {
+  LayoutResourceClass PC {
+  }
+  LayoutResourceClass XBOX_ONE : PC {
+  }
+  LayoutResourceClass XBOX_SERIES : PC {
+  }
+  LayoutResourceClass PS4 : PC {
+  }
+  LayoutResourceClass HEADLESS : PC {
+  }
+ }
+}

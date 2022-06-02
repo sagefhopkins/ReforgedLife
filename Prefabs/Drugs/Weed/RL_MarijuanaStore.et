@@ -1,0 +1,33 @@
+Tree : "{938E2F2C01769971}Prefabs/Vegetation/Bush/b_phragmites_australis_1b.et" {
+ ID "2272273384468550"
+ components {
+  SimpleSoundComponent "{597B30180F22E06E}" {
+  }
+  ActionsManagerComponent "{597B30187EA9231E}" {
+   ActionContexts {
+    UserActionContext "{597B30187D3DE0BB}" {
+     UIInfo UIInfo "{597B30187B40E7DA}" {
+     }
+     ContextName "Sell"
+     Position PointInfo "{597B301876B591D4}" {
+     }
+     Radius 0.5
+    }
+   }
+   additionalActions {
+    RL_SellItem "{597B5AF8668B2CB8}" {
+     ParentContextList {
+      "Sell"
+     }
+     Duration 1
+     m_ExchangeItemDisplayName "Marijuana"
+     m_ItemExchangedFor "{18983891B9E2262E}Prefabs/Items/Money/Money.et"
+     m_ItemPrice 6
+    }
+   }
+  }
+  RplComponent "{597B30186E068608}" {
+  }
+ }
+ coords 4440.914 -0.022 11214.687
+}

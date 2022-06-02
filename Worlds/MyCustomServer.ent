@@ -1,0 +1,24 @@
+SubScene {
+ Parent "worlds/Eden/Eden.ent"
+}
+Layer RL_GeneralStore_StPhilpee {
+ Index 0
+}
+Layer SpawnPoint {
+ Index 1
+}
+Layer GameMode {
+ Index 2
+}
+Layer AppleField {
+ Index 3
+}
+Layer DrugDealer_StPhilpie {
+ Index 4
+}
+Layer MarijuanaField {
+ Index 5
+}
+Layer IronMine {
+ Index 6
+}

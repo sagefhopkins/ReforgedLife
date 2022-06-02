@@ -1,0 +1,35 @@
+MetaFileClass {
+ Name "{BC4DB56609554AD6}3dModels/Weed/hemp_bs_2.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{5983504B11984DCD}" {
+     SourceMaterial "Branches"
+     AssignedMaterial "{F39F537EC90ED12E}3dModels/Weed/data/Branches.emat"
+    }
+    MaterialAssignClass "{5983504B11984DB4}" {
+     SourceMaterial "LeaveSimple"
+     AssignedMaterial "{4F4D8C031E460076}3dModels/Weed/data/LeaveSimple.emat"
+    }
+   }
+   Common TXOCommonClass "{5983504B12742975}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{5983504B127724AA}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{5983504B12773AFB}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{5983504B12773882}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{5983504B12773F8A}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

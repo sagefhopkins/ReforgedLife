@@ -1,0 +1,5 @@
+MatPBRBasic {
+ BCRMap "{2C2AD803FC6EF735}3dModels/Money/tex/stacks_diffuse_no_ao.edds"
+ NormalPower 0
+ NMOMap "{2C2AD803FC6EF735}3dModels/Money/tex/stacks_diffuse_no_ao.edds"
+}

@@ -1,0 +1,8 @@
+GameProject {
+ ID "ReforgedLifeServer"
+ GUID "597B106D2EB42948"
+ TITLE "Reforged Life Server"
+ Dependencies {
+  "59636E668EA37AD7" "58D0FB3206B6F859"
+ }
+}

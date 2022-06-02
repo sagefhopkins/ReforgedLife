@@ -1,0 +1,44 @@
+$grp Tree : "{A3FD07643587C14D}Prefabs/Plants/RL_MarijuanaPlant.et" {
+ {
+  coords 3949.103 0.001 10462.129
+ }
+ {
+  coords 3944.211 0.001 10464.481
+ }
+ {
+  coords 3949.619 0.001 10465.678
+ }
+ {
+  coords 3944.997 0.001 10466.602
+ }
+ {
+  coords 3946.333 0.001 10463.101
+ }
+ {
+  coords 3947.181 0.001 10465.619
+ }
+ {
+  coords 3941.83 0.001 10464.449
+ }
+ {
+  coords 3943.646 0.001 10467.137
+ }
+ {
+  coords 3940.369 0.001 10468.751
+ }
+ {
+  coords 3938.632 0.001 10465.623
+ }
+ {
+  coords 3947.412 0.001 10464.314
+ }
+}
+Vehicle M151A1 : "{F649585ABB3706C4}Prefabs/Vehicles/Wheeled/M151A2/M151A2.et" {
+ components {
+  SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+   m_fVehicleDestroyDamage 10408.7
+  }
+ }
+ coords 4447.336 5.782 11202.845
+ angleY -175.624
+}

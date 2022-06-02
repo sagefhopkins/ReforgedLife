@@ -1,0 +1,50 @@
+GenericEntity {
+ ID "598545F07A79DC9F"
+ components {
+  InventoryItemComponent "{598545F3EE218294}" {
+   Attributes SCR_ItemAttributeCollection "{598545F3EC709338}" {
+    ItemDisplayName UIInfo "{598545F3EA6A9438}" {
+     Name "Iron Bar"
+     Description "1 Standard Sized Iron Bar"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{598545F3D7A81287}" {
+     Weight 1
+     SizeSetupStrategy Volume
+     ItemVolume 0.01
+    }
+    CommonItemType "NONE"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_ANY
+   }
+  }
+  MeshObject "{598545F383BEEA8D}" {
+   Object "{350154BFC9A6F122}3dModels/Iron/ironbar.xob"
+  }
+  SimpleSoundComponent "{598545F035773466}" {
+   Filenames {
+    "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+   }
+  }
+  ActionsManagerComponent "{598545F02D7CB638}" {
+   ActionContexts {
+    UserActionContext "{598545F017B19402}" {
+     ContextName "default"
+     Position PointInfo "{598545F0101C3FCD}" {
+     }
+     Radius 0.5
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{598545F028F35043}" {
+     ParentContextList {
+      "default"
+     }
+    }
+   }
+  }
+  RplComponent "{598545F02F3820D7}" {
+  }
+ }
+ coords 5007.151 23.401 9696.276
+ scale 0.07
+}

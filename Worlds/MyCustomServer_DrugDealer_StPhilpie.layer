@@ -1,0 +1,53 @@
+$grp GenericEntity {
+ {
+  components {
+   MeshObject "{598317135418295D}" {
+    Object "{CE6DE5F97659C5DC}3dModels/Sign/Sign.xob"
+   }
+  }
+  coords 4303.912 3.149 10957.511
+  angleY 172.739
+  scale 0.3
+ }
+ {
+  components {
+   MeshObject "{59831713ABAD78A2}" {
+    Object "{0B8EFD95DF7F36BB}3dModels/Sign/SellItems.xob"
+   }
+  }
+  coords 4303.66 3.502 10957.067
+  angleX 90
+  angleZ -77.018
+  scale 0.5
+ }
+}
+GenericEntity : "{757FCCE8E756175C}Prefabs/Props/Furniture/MeetingTable_01.et" {
+ coords 4302.799 1.576 10955.891
+ angleY 80.626
+}
+GenericEntity SellMarijuana : "{C9D661E5B0714711}Prefabs/Items/Food/Apple.et" {
+ components {
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Enabled 0
+  }
+  MeshObject "{59652C0ACB87CEB7}" {
+   Object "{963881EB9C006DAC}3dModels/BUD.xob"
+  }
+  SCR_ConsumableItemComponent "{5966FECAA294E6A7}" {
+   Enabled 0
+  }
+  ActionsManagerComponent "{508AB5952B584B2E}" {
+   additionalActions {
+    RL_SellItem "{51EC842E3A187379}" {
+     Duration 1
+     m_ExchangeItemDisplayName "Marijuana"
+     m_ItemExchangedFor "{18983891B9E2262E}Prefabs/Items/Money/Money.et"
+     m_ItemPrice 15
+    }
+   }
+  }
+ }
+ coords 4302.46 2.485 10956.508
+ angleY 29.209
+ scale 2
+}

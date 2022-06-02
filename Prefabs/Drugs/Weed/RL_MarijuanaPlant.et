@@ -1,0 +1,31 @@
+Tree : "{938E2F2C01769971}Prefabs/Vegetation/Bush/b_phragmites_australis_1b.et" {
+ ID "2272273384468550"
+ components {
+  SimpleSoundComponent "{597B30180F22E06E}" {
+  }
+  ActionsManagerComponent "{597B30187EA9231E}" {
+   ActionContexts {
+    UserActionContext "{597B30187D3DE0BB}" {
+     UIInfo UIInfo "{597B30187B40E7DA}" {
+     }
+     ContextName "Gather"
+     Position PointInfo "{597B301876B591D4}" {
+     }
+    }
+   }
+   additionalActions {
+    EL_GatherAction "{597B3C9B9ED5D6BF}" {
+     ParentContextList {
+      "Gather"
+     }
+     Duration 1
+     m_GatherItemDisplayName "Marijuana"
+     m_GatherItemPrefab "{4B4BC3D0A955C97B}Prefabs/Items/Food/Weed/Weed.et"
+    }
+   }
+  }
+  RplComponent "{597B30186E068608}" {
+  }
+ }
+ coords 4446.172 0.001 11208.236
+}

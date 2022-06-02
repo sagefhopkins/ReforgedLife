@@ -1,0 +1,18 @@
+GenericEntity : "{C9D661E5B0714711}Prefabs/Items/Food/Apple.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName UIInfo "{5222EB4D07D865FA}" {
+     Name "Marijuana"
+     Description "This is Marijuana gathered from a Marijuana Plant"
+     Icon "{D41920874F9F703A}Prefabs/Items/Food/Weed/weed.edds"
+    }
+   }
+  }
+  MeshObject "{59652C0ACB87CEB7}" {
+   Object "{963881EB9C006DAC}3dModels/BUD.xob"
+  }
+ }
+ coords 4444.683 5.821 11208.042
+}

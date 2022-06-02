@@ -1,0 +1,41 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  CanvasWidgetClass "{597B415FEEA9E613}" {
+   Name "Canvas0"
+   Slot FrameWidgetSlot "{597B415FEEA9E5F0}" {
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 1920.2
+    OffsetRight -1920.2
+    SizeY 1077.48
+    OffsetBottom -1077.48
+   }
+   Color 0.004 0.171 0 1
+  }
+  ButtonWidgetClass "{597B415FC2E7344E}" {
+   Name "Button0"
+   Slot FrameWidgetSlot "{597B415FC2E73423}" {
+    PositionX 851.229
+    OffsetLeft 851.229
+    PositionY 642.713
+    OffsetTop 642.713
+    SizeX 252.087
+    OffsetRight -1103.32
+    SizeY 120.765
+    OffsetBottom -763.478
+   }
+   {
+    TextWidgetClass "{597B415835B3F8EA}" {
+     Name "Text0"
+     Slot ButtonWidgetSlot "{597B415835B3F8D6}" {
+     }
+     Color 0 0 0 1
+     Text "Sell Items"
+    }
+   }
+  }
+ }
+}

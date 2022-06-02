@@ -1,0 +1,115 @@
+$grp GenericEntity {
+ Sign {
+  components {
+   MeshObject "{598317011EE44273}" {
+    Object "{CE6DE5F97659C5DC}3dModels/Sign/Sign.xob"
+   }
+  }
+  coords 4462.551 4.61 11128.589
+  angleY 28.503
+  scale 0.25
+  {
+   GenericEntity {
+    components {
+     MeshObject "{598317004005756E}" {
+      Object "{895FBC3D080ED9A4}3dModels/Sign/BuyItems.xob"
+     }
+    }
+    coords 0.504 0.944 0.586
+    angleX 89.96
+    angleY -118.503
+    angleZ -26.98
+    scale 2
+   }
+  }
+ }
+ Sign2 {
+  components {
+   MeshObject "{598317011EE44273}" {
+    Object "{CE6DE5F97659C5DC}3dModels/Sign/Sign.xob"
+   }
+  }
+  coords 4474.747 4.654 11123.909
+  angleY -154.391
+  scale 0.25
+  {
+   GenericEntity {
+    components {
+     MeshObject "{59831700824FB44F}" {
+      Object "{0B8EFD95DF7F36BB}3dModels/Sign/SellItems.xob"
+     }
+    }
+    coords 0.255 0.664 0.141
+    angleX 90
+    angleY -25.609
+    angleZ 62.5
+    scale 2
+   }
+  }
+ }
+}
+SCR_DestructibleBuildingEntity Building : "{9ABD5AF92E43D2AA}Prefabs/Structures/Commercial/Shops/ShopModern_E_01_Base.et" {
+ coords 4474.171 1.07 11124.188
+ angleY -152.175
+}
+$grp GenericEntity : "{B7669B7F8B7923F6}Prefabs/Props/Commercial/ShelfShop_01.et" {
+ StoreShelves {
+  coords 4476.265 2.601 11126.736
+  angleY -62.029
+  {
+   $grp GenericEntity : "{B7669B7F8B7923F6}Prefabs/Props/Commercial/ShelfShop_01.et" {
+    {
+     coords -7.449 0 0.071
+     angleY -0.037
+    }
+    {
+     coords -4.961 0 0.047
+    }
+    {
+     coords -2.479 0 0.022
+    }
+   }
+  }
+ }
+ StoreShelves2 {
+  coords 4461.5 2.601 11126.056
+  angleY 115.968
+  {
+   $grp GenericEntity : "{B7669B7F8B7923F6}Prefabs/Props/Commercial/ShelfShop_01.et" {
+    {
+     coords -7.449 0 0.071
+     angleY -0.037
+    }
+    {
+     coords -4.961 0 0.047
+    }
+    {
+     coords -2.479 0 0.022
+    }
+   }
+  }
+ }
+}
+GenericEntity SellApple : "{C9D661E5B0714711}Prefabs/Items/Food/Apple.et" {
+ components {
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Enabled 0
+  }
+  SCR_ConsumableItemComponent "{5966FECAA294E6A7}" {
+   Enabled 0
+  }
+  ActionsManagerComponent "{508AB5952B584B2E}" {
+   additionalActions {
+    RL_SellItem "{51EC842E3A187379}" {
+     Duration 1
+     m_ExchangeItemDisplayName "Apple"
+     m_ItemExchangedFor "{18983891B9E2262E}Prefabs/Items/Money/Money.et"
+     m_ItemPrice 2
+    }
+   }
+  }
+ }
+ coords 4472.113 3.785 11119.635
+ angleY 29.209
+ scale 2
+}

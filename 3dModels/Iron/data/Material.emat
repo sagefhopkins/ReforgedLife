@@ -1,0 +1,9 @@
+MatPBRBasic {
+ Color 0.105 0.105 0.105 1
+ DiffuseIBL 0.089 0.089 0.089 1
+ SpecularIBL 0.089 0.089 0.089 1
+ Diffuse 0.089 0.089 0.089 1
+ Emissive 0.076 0.076 0.076 0
+ EmissiveLV 8
+ Specular 0.089 0.089 0.089 1
+}
