@@ -1,0 +1,17 @@
+Tree : "{EB1FCEB0BE00DB42}Prefabs/Plants/RL_AppleTree.et" {
+ ID "27132768B0952045"
+ components {
+  MeshObject "{02E2273E851D0152}" {
+   Object "{468C39922B0D8402}Assets/Vegetation/Tree/Alnus_Glutinosa/T_Alnus_glutinosa_2f.xob"
+  }
+  ActionsManagerComponent "{596540948BBDD481}" {
+   additionalActions {
+    EL_GatherAction "{59654094806921B6}" {
+     m_GatherItemDisplayName "Logs"
+     m_GatherItemPrefab "{B611A61E6603B148}Prefabs/Items/Logs/Log.et"
+    }
+   }
+  }
+ }
+ coords 4443.139 0.001 11197.57
+}

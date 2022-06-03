@@ -1,5 +1,14 @@
 $grp Tree : "{EB1FCEB0BE00DB42}Prefabs/Plants/RL_AppleTree.et" {
  {
+  components {
+   SCR_MapDescriptorComponent "{59854D68E862C71D}" {
+    DisplayName "Apple Field"
+    MapItemDescriptor 1
+    MainType Landmark
+    Scale 1
+    ForceGroupScale 2
+   }
+  }
   coords 4903.494 0.001 10604.135
  }
  {

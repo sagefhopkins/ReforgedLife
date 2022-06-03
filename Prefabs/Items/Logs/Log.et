@@ -1,0 +1,18 @@
+GenericEntity : "{7E65C441726DFB2F}Prefabs/Items/Iron Bar/IronBar.et" {
+ ID "598545F07A79DC9F"
+ components {
+  InventoryItemComponent "{598545F3EE218294}" {
+   Attributes SCR_ItemAttributeCollection "{598545F3EC709338}" {
+    ItemDisplayName UIInfo "{598545F3EA6A9438}" {
+     Name "Log"
+     Description "A Log Havested from Local Lumber"
+    }
+   }
+  }
+  MeshObject "{598545F383BEEA8D}" {
+   Object "{A75CA1217DFC8D2C}3dModels/lOGS/logs.xob"
+  }
+ }
+ coords 4444.841 5.931 11198.405
+ scale 0.15
+}

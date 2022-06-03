@@ -1,0 +1,32 @@
+GenericEntity : "{7E65C441726DFB2F}Prefabs/Items/Iron Bar/IronBar.et" {
+ ID "598545F07A79DC9F"
+ components {
+  InventoryItemComponent "{598545F3EE218294}" {
+   Enabled 0
+  }
+  ActionsManagerComponent "{598545F02D7CB638}" {
+   ActionContexts {
+    UserActionContext "{598545F017B19402}" {
+     ContextName "Buy"
+    }
+   }
+   additionalActions {
+    RL_BuyItem "{598545F028F35043}" {
+     ParentContextList {
+      "Buy"
+     }
+     Duration 1
+     m_ExchangeItemDisplayName "Money"
+     m_ItemExchangedFor "{761A03A9C5BA8D68}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Base.et"
+     m_ItemName "SVD Magazine"
+     m_ItemPrice 10
+    }
+   }
+  }
+ }
+ coords 0 0.114 0.016
+ angleX 2.294
+ angleY -88.572
+ angleZ -90.686
+ scale 0.001
+}

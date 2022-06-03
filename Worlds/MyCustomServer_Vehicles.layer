@@ -1,0 +1,371 @@
+$grp Vehicle : "{F649585ABB3706C4}Prefabs/Vehicles/Wheeled/M151A2/M151A2.et" {
+ M151A1 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4477.137 5.782 11201.158
+  angleY -91.296
+ }
+ M151A2 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4477.029 5.855 11198.564
+  angleY -91.296
+ }
+ M151A3 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4477.099 5.855 11196.229
+  angleY -91.296
+ }
+ M151A4 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4476.992 5.928 11193.635
+  angleY -91.296
+ }
+ M151A5 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4477.062 6.053 11183.583
+  angleY -91.296
+ }
+ M151A6 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4477.207 5.907 11191.105
+  angleY -91.296
+ }
+ M151A7 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4477.098 5.98 11188.512
+  angleY -91.296
+ }
+ M151A8 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4477.168 5.98 11186.178
+  angleY -91.296
+ }
+ M151A9 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4468.965 5.855 11187.923
+  angleY -91.296
+ }
+ M151A10 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4468.934 5.657 11202.902
+  angleY -91.296
+ }
+ M151A11 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4468.825 5.73 11200.306
+  angleY -91.296
+ }
+ M151A12 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4468.896 5.73 11197.973
+  angleY -91.296
+ }
+ M151A13 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4468.789 5.803 11195.378
+  angleY -91.296
+ }
+ M151A14 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4468.858 5.928 11185.324
+  angleY -91.296
+ }
+ M151A15 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4469.004 5.782 11192.847
+  angleY -91.296
+ }
+ M151A16 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4468.895 5.855 11190.255
+  angleY -91.296
+ }
+ M151A17 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4460.478 5.704 11185.554
+  angleY -91.296
+ }
+ M151A18 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4460.447 5.506 11200.533
+  angleY -91.296
+ }
+ M151A19 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4460.337 5.579 11197.938
+  angleY -91.296
+ }
+ M151A20 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4460.409 5.579 11195.604
+  angleY -91.296
+ }
+ M151A21 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4460.302 5.652 11193.009
+  angleY -91.296
+ }
+ M151A22 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4460.37 5.777 11182.956
+  angleY -91.296
+ }
+ M151A23 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4460.516 5.631 11190.479
+  angleY -91.296
+ }
+ M151A24 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4460.408 5.704 11187.886
+  angleY -91.296
+ }
+ M151A25 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4456.375 5.813 11185.475
+  angleY -91.296
+ }
+ M151A26 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4456.344 5.615 11200.453
+  angleY -91.296
+ }
+ M151A27 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4456.234 5.688 11197.857
+  angleY -91.296
+ }
+ M151A28 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4456.306 5.688 11195.522
+  angleY -91.296
+ }
+ M151A29 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4456.199 5.761 11192.929
+  angleY -91.296
+ }
+ M151A30 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4456.267 5.886 11182.876
+  angleY -91.296
+ }
+ M151A31 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4456.413 5.74 11190.398
+  angleY -91.296
+ }
+ M151A32 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4456.305 5.813 11187.806
+  angleY -91.296
+ }
+ M151A33 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4452.025 5.805 11185.511
+  angleY -91.296
+ }
+ M151A34 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+   SCR_VehicleInventoryStorageManagerComponent "{591056FA3B752FE6}" {
+    InitialInventoryItems {
+     ItemsInitConfigurationItem "{59861AC18114D712}" {
+      PrefabsToSpawn {
+       "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et" "{18983891B9E2262E}Prefabs/Items/Money/Money.et"
+      }
+     }
+    }
+   }
+  }
+  coords 4451.996 5.607 11200.49
+  angleY -91.296
+ }
+ M151A35 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4451.885 5.68 11197.896
+  angleY -91.296
+ }
+ M151A36 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4451.958 5.68 11195.561
+  angleY -91.296
+ }
+ M151A37 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4451.852 5.753 11192.965
+  angleY -91.296
+ }
+ M151A38 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4451.917 5.878 11182.913
+  angleY -91.296
+ }
+ M151A39 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4452.064 5.732 11190.438
+  angleY -91.296
+ }
+ M151A40 {
+  components {
+   SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+    m_fVehicleDestroyDamage 10408.7
+   }
+  }
+  coords 4451.957 5.805 11187.843
+  angleY -91.296
+ }
+}

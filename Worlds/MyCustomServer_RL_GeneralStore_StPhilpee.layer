@@ -1,62 +1,102 @@
-$grp GenericEntity {
- Sign {
-  components {
-   MeshObject "{598317011EE44273}" {
-    Object "{CE6DE5F97659C5DC}3dModels/Sign/Sign.xob"
-   }
-  }
-  coords 4462.551 4.61 11128.589
-  angleY 28.503
-  scale 0.25
-  {
-   GenericEntity {
-    components {
-     MeshObject "{598317004005756E}" {
-      Object "{895FBC3D080ED9A4}3dModels/Sign/BuyItems.xob"
-     }
-    }
-    coords 0.504 0.944 0.586
-    angleX 89.96
-    angleY -118.503
-    angleZ -26.98
-    scale 2
-   }
-  }
- }
- Sign2 {
-  components {
-   MeshObject "{598317011EE44273}" {
-    Object "{CE6DE5F97659C5DC}3dModels/Sign/Sign.xob"
-   }
-  }
-  coords 4474.747 4.654 11123.909
-  angleY -154.391
-  scale 0.25
-  {
-   GenericEntity {
-    components {
-     MeshObject "{59831700824FB44F}" {
-      Object "{0B8EFD95DF7F36BB}3dModels/Sign/SellItems.xob"
-     }
-    }
-    coords 0.255 0.664 0.141
-    angleX 90
-    angleY -25.609
-    angleZ 62.5
-    scale 2
-   }
-  }
- }
-}
 SCR_DestructibleBuildingEntity Building : "{9ABD5AF92E43D2AA}Prefabs/Structures/Commercial/Shops/ShopModern_E_01_Base.et" {
+ components {
+  SCR_MapDescriptorComponent "{59854D68897B13B3}" {
+   DisplayName "General Store"
+   MainType Task
+  }
+ }
  coords 4474.171 1.07 11124.188
  angleY -152.175
+ {
+  EnvironmentProbeEntity {
+   ID "5218AE3194CFFAA9"
+   coords 5.521 3.112 -2.903
+   FarPlane 139.743
+   LVReflectionBrightness -3.932
+   ReflectionDesaturation 0.701
+   LVDiffuseBrightness -0.152
+   DiffuseDesaturation 0.611
+   LVBackgroundColor 4.615
+  }
+ }
 }
 $grp GenericEntity : "{B7669B7F8B7923F6}Prefabs/Props/Commercial/ShelfShop_01.et" {
- StoreShelves {
+ SellShelves {
   coords 4476.265 2.601 11126.736
   angleY -62.029
   {
+   GenericEntity Sign2 {
+    components {
+     MeshObject "{598317011EE44273}" {
+      Object "{CE6DE5F97659C5DC}3dModels/Sign/Sign.xob"
+     }
+    }
+    coords -3.209 2.053 0.014
+    angleY -92.362
+    scale 0.25
+    {
+     GenericEntity {
+      components {
+       MeshObject "{59831700824FB44F}" {
+        Object "{0B8EFD95DF7F36BB}3dModels/Sign/SellItems.xob"
+       }
+      }
+      coords 0.255 0.664 0.141
+      angleX 90
+      angleY -25.609
+      angleZ 62.5
+      scale 2
+     }
+    }
+   }
+   GenericEntity SellIron : "{7E65C441726DFB2F}Prefabs/Items/Iron Bar/IronBar.et" {
+    components {
+     InventoryItemComponent "{598545F3EE218294}" {
+      Enabled 0
+     }
+     ActionsManagerComponent "{598545F02D7CB638}" {
+      ActionContexts {
+       UserActionContext "{598545F017B19402}" {
+        ContextName "Sell"
+       }
+      }
+      additionalActions {
+       RL_SellItem "{598545F028F35043}" {
+        ParentContextList {
+         "Sell"
+        }
+        Duration 1
+        m_ExchangeItemDisplayName "Iron Bar"
+        m_ItemExchangedFor "{AA9931112021B5D3}Prefabs/Items/Money/Money_2.et"
+        m_ItemPrice 10
+       }
+      }
+     }
+    }
+    coords -7.613 1.208 0.297
+    angleY 89.538
+    scale 0.025
+   }
+   GenericEntity SellLog : "{B611A61E6603B148}Prefabs/Items/Logs/Log.et" {
+    components {
+     InventoryItemComponent "{598545F3EE218294}" {
+      Enabled 0
+     }
+     ActionsManagerComponent "{598545F02D7CB638}" {
+      additionalActions {
+       RL_SellItem "{598545F028F35043}" {
+        Duration 1
+        m_ExchangeItemDisplayName "Log"
+        m_ItemExchangedFor "{AA9931112021B5D3}Prefabs/Items/Money/Money_2.et"
+        m_ItemPrice 6
+       }
+      }
+     }
+    }
+    coords -6.845 1.206 0.215
+    angleY 90.012
+    scale 0.05
+   }
    $grp GenericEntity : "{B7669B7F8B7923F6}Prefabs/Props/Commercial/ShelfShop_01.et" {
     {
      coords -7.449 0 0.071
@@ -69,12 +109,738 @@ $grp GenericEntity : "{B7669B7F8B7923F6}Prefabs/Props/Commercial/ShelfShop_01.et
      coords -2.479 0 0.022
     }
    }
+   GenericEntity SellApple : "{C9D661E5B0714711}Prefabs/Items/Food/Apple.et" {
+    components {
+     InventoryItemComponent "{5222EB4D0C73006B}" {
+      Enabled 0
+     }
+     SCR_ConsumableItemComponent "{5966FECAA294E6A7}" {
+      Enabled 0
+     }
+     ActionsManagerComponent "{508AB5952B584B2E}" {
+      additionalActions {
+       RL_SellItem "{51EC842E3A187379}" {
+        Duration 1
+        m_ExchangeItemDisplayName "Apple"
+        m_ItemExchangedFor "{AA9931112021B5D3}Prefabs/Items/Money/Money_2.et"
+        m_ItemPrice 4
+       }
+      }
+     }
+    }
+    coords -8.219 1.184 0.336
+    angleY 91.238
+    scale 2
+   }
   }
  }
- StoreShelves2 {
+ BuyShelves {
   coords 4461.5 2.601 11126.056
   angleY 115.968
   {
+   $grp GenericEntity {
+    M14Mag {
+     components {
+      MeshObject "{5985607E11C79819}" {
+       Object "{9FB96EBAC79195C6}Assets/Weapons/Magazines/M14/Magazine_M14_20rnd.xob"
+      }
+     }
+     coords -17.217 0.909 1.119
+     angleY 176.693
+     {
+      GenericEntity BuyM14Mag : "{9517AF85F0F56BD8}Prefabs/Stores/BuyItem/BuyItemPrefabEquipment.et" {
+       components {
+        ActionsManagerComponent "{598545F02D7CB638}" {
+         additionalActions {
+          RL_BuyItem "{598545F028F35043}" {
+           m_ItemExchangedFor "{6D18CC33708EE712}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_Base.et"
+           m_ItemName "M14 Magazine"
+          }
+         }
+        }
+       }
+       coords -0.006 0.023 -0.014
+       angleX 0
+       angleY 67.339
+       angleZ 0
+      }
+     }
+    }
+    AK47Mag {
+     components {
+      MeshObject "{5985607E7A57BA51}" {
+       Object "{8AE043F1A5E268F4}Assets/Weapons/Magazines/AK74/Magazine_30rnd_AK74.xob"
+      }
+     }
+     coords -17.181 0.896 2.282
+     angleY 177.979
+     {
+      GenericEntity BuyAK47Mag : "{9517AF85F0F56BD8}Prefabs/Stores/BuyItem/BuyItemPrefabEquipment.et" {
+       components {
+        ActionsManagerComponent "{598545F02D7CB638}" {
+         additionalActions {
+          RL_BuyItem "{598545F028F35043}" {
+           m_ItemExchangedFor "{BBB50A815A2F916B}Prefabs/Weapons/Magazines/Magazine_545x39_AK_30rnd_Ball.et"
+           m_ItemName "AK47 Magazine"
+           m_ItemPrice 5
+          }
+         }
+        }
+       }
+       coords -0.012 -0.004 0.015
+       angleX 0
+       angleY 66.053
+       angleZ 0
+      }
+     }
+    }
+    M16Mag {
+     components {
+      MeshObject "{5985607E58892B15}" {
+       Object "{4DEA4332E3ED5CE7}Assets/Weapons/Magazines/STANAG/Magazine_30rnd_STANAG.xob"
+      }
+     }
+     coords -17.108 0.886 3.309
+     angleY 173.599
+     {
+      GenericEntity BuyM16Mag : "{9517AF85F0F56BD8}Prefabs/Stores/BuyItem/BuyItemPrefabEquipment.et" {
+       components {
+        ActionsManagerComponent "{598545F02D7CB638}" {
+         additionalActions {
+          RL_BuyItem "{598545F028F35043}" {
+           m_ItemExchangedFor "{2EBF60EF24B108FC}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Ball.et"
+           m_ItemName "M16 Magazine"
+           m_ItemPrice 7
+          }
+         }
+        }
+       }
+       coords -0.001 0 0.002
+       angleX 0
+       angleY 70.433
+       angleZ 0
+      }
+     }
+    }
+    SVDMag {
+     components {
+      MeshObject "{5985607E52B91AC8}" {
+       Object "{10D7B743E0A06735}Assets/Weapons/Magazines/SVD/Magazine_10rd_SVD.xob"
+      }
+     }
+     coords -17.114 0.809 4.484
+     angleY 168.277
+     {
+      GenericEntity BuySVDMag : "{9517AF85F0F56BD8}Prefabs/Stores/BuyItem/BuyItemPrefabEquipment.et" {
+       coords -0.006 0.006 0
+       angleX 0
+       angleY 75.755
+       angleZ 0
+      }
+     }
+    }
+    Sign {
+     components {
+      MeshObject "{598317011EE44273}" {
+       Object "{CE6DE5F97659C5DC}3dModels/Sign/Sign.xob"
+      }
+     }
+     coords -2.737 2.009 -0.165
+     angleY -87.465
+     scale 0.25
+     {
+      GenericEntity {
+       components {
+        MeshObject "{598317004005756E}" {
+         Object "{895FBC3D080ED9A4}3dModels/Sign/BuyItems.xob"
+        }
+       }
+       coords 0.504 0.944 0.586
+       angleX 89.96
+       angleY -118.503
+       angleZ -26.98
+       scale 2
+      }
+     }
+    }
+    BuyAliceMedium {
+     components {
+      MeshObject "{59854D63D8FB4778}" {
+       Object "{B982CAE1F85001D0}Assets/Items/Equipment/Backpacks/Backpack_ALICE_Medium/Backpack_ALICE_Medium_item.xob"
+      }
+      RigidBody "{598560691E328F01}" {
+      }
+      SimpleSoundComponent "{59854D623F9EFE8C}" {
+       Filenames {
+        "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+       }
+      }
+      ActionsManagerComponent "{59854D6239CAA401}" {
+       ActionContexts {
+        UserActionContext "{59854D6238FB75F2}" {
+         ContextName "Buy"
+         Position PointInfo "{59854D623569749B}" {
+         }
+         Radius 0.5
+        }
+       }
+       additionalActions {
+        RL_BuyItem "{59854D62317AE722}" {
+         Duration 1
+         m_ExchangeItemDisplayName "Money"
+         m_ItemExchangedFor "{06B68C58B72EAAC6}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium.et"
+         m_ItemPrice 50
+        }
+       }
+      }
+      RplComponent "{59854D63C10CF395}" {
+      }
+     }
+     coords 0.846 1.42 0.121
+     angleX -88.391
+     angleY -115.968
+     angleZ 115.224
+     {
+      GenericEntity BuyAlice : "{7E65C441726DFB2F}Prefabs/Items/Iron Bar/IronBar.et" {
+       components {
+        InventoryItemComponent "{598545F3EE218294}" {
+         Enabled 0
+        }
+        ActionsManagerComponent "{598545F02D7CB638}" {
+         ActionContexts {
+          UserActionContext "{598545F017B19402}" {
+           ContextName "Buy"
+          }
+         }
+         additionalActions {
+          RL_BuyItem "{598545F028F35043}" {
+           ParentContextList {
+            "Buy"
+           }
+           Duration 1
+           m_ExchangeItemDisplayName "Money"
+           m_ItemExchangedFor "{06B68C58B72EAAC6}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium.et"
+           m_ItemName "Alice Medium"
+           m_ItemPrice 50
+          }
+         }
+        }
+       }
+       coords 0 0.114 0.016
+       angleX 2.294
+       angleY -88.572
+       angleZ -90.686
+       scale 0.001
+      }
+     }
+    }
+    BuyKolobok {
+     components {
+      MeshObject "{59854D63D8FB4778}" {
+       Object "{F63FB77CF5C853D7}Assets/Items/Equipment/Backpacks/Backpack_Kolobok/Backpack_Kolobok_item.xob"
+      }
+      RigidBody "{5985606921736EE9}" {
+      }
+      SimpleSoundComponent "{59854D623F9EFE8C}" {
+       Filenames {
+        "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+       }
+      }
+      ActionsManagerComponent "{59854D6239CAA401}" {
+       ActionContexts {
+        UserActionContext "{59854D6238FB75F2}" {
+         ContextName "Buy"
+         Position PointInfo "{59854D623569749B}" {
+         }
+         Radius 0.5
+        }
+       }
+       additionalActions {
+        RL_BuyItem "{59854D62317AE722}" {
+         Duration 1
+         m_ExchangeItemDisplayName "Money"
+         m_ItemExchangedFor "{41A9C55B61F375F0}Prefabs/Items/Equipment/Backpacks/Backpack_Kolobok.et"
+         m_ItemPrice 25
+        }
+       }
+      }
+      RplComponent "{59854D63C10CF395}" {
+      }
+     }
+     coords 0.027 1.394 0.084
+     angleX -88.391
+     angleY -115.968
+     angleZ 115.224
+     {
+      GenericEntity BuyKolo : "{7E65C441726DFB2F}Prefabs/Items/Iron Bar/IronBar.et" {
+       components {
+        InventoryItemComponent "{598545F3EE218294}" {
+         Enabled 0
+        }
+        ActionsManagerComponent "{598545F02D7CB638}" {
+         ActionContexts {
+          UserActionContext "{598545F017B19402}" {
+           ContextName "Buy"
+          }
+         }
+         additionalActions {
+          RL_BuyItem "{598545F028F35043}" {
+           ParentContextList {
+            "Buy"
+           }
+           Duration 1
+           m_ExchangeItemDisplayName "Money"
+           m_ItemExchangedFor "{41A9C55B61F375F0}Prefabs/Items/Equipment/Backpacks/Backpack_Kolobok.et"
+           m_ItemName "Kolobok"
+           m_ItemPrice 15
+          }
+         }
+        }
+       }
+       coords 0.019 0.137 -0.028
+       angleX -66.168
+       angleY 95.582
+       angleZ -4.185
+       scale 0.001
+      }
+     }
+    }
+    BuyM70 {
+     components {
+      MeshObject "{59854D63D8FB4778}" {
+       Object "{B1FFEC03F33376B8}Assets/Items/Equipment/Backpacks/Backpack_M70_Swiss/Backpack_M70_Swiss_Item.xob"
+      }
+      RigidBody "{5985606923C514CB}" {
+      }
+      SimpleSoundComponent "{59854D623F9EFE8C}" {
+       Filenames {
+        "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+       }
+      }
+      ActionsManagerComponent "{59854D6239CAA401}" {
+       ActionContexts {
+        UserActionContext "{59854D6238FB75F2}" {
+         ContextName "Buy"
+         Position PointInfo "{59854D623569749B}" {
+         }
+         Radius 0.5
+        }
+       }
+       additionalActions {
+        RL_BuyItem "{59854D62317AE722}" {
+         Duration 1
+         m_ExchangeItemDisplayName "Money"
+         m_ItemExchangedFor "{FDA7B6630DB87991}Prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss.et"
+         m_ItemPrice 35
+        }
+       }
+      }
+      RplComponent "{59854D63C10CF395}" {
+      }
+     }
+     coords -0.759 1.423 0.163
+     angleX 89.228
+     angleY -28.128
+     angleZ 152.627
+     {
+      GenericEntity BuySwissM70 : "{7E65C441726DFB2F}Prefabs/Items/Iron Bar/IronBar.et" {
+       components {
+        InventoryItemComponent "{598545F3EE218294}" {
+         Enabled 0
+        }
+        ActionsManagerComponent "{598545F02D7CB638}" {
+         ActionContexts {
+          UserActionContext "{598545F017B19402}" {
+           ContextName "Buy"
+          }
+         }
+         additionalActions {
+          RL_BuyItem "{598545F028F35043}" {
+           ParentContextList {
+            "Buy"
+           }
+           Duration 1
+           m_ExchangeItemDisplayName "Money"
+           m_ItemExchangedFor "{FDA7B6630DB87991}Prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss.et"
+           m_ItemName "Swiss M70"
+           m_ItemPrice 30
+          }
+         }
+        }
+       }
+       coords -0.004 0.069 0.032
+       angleX -25.213
+       angleY 89.968
+       angleZ -90.758
+       scale 0.001
+      }
+     }
+    }
+    M70_Bottom {
+     components {
+      MeshObject "{5985606124BB2A4D}" {
+       Object "{065DC5366BA23024}Assets/Characters/Uniforms/Pants_M70/Pants_M70_01.xob"
+      }
+     }
+     coords -11.144 -0.248 0.601
+     angleY 3.787
+     {
+      GenericEntity M70_Top {
+       components {
+        MeshObject "{59856066ED2AEAC1}" {
+         Object "{7B65117028DECB01}Assets/Characters/Uniforms/Jacket_M70/Jacket_M70_01.xob"
+        }
+       }
+       coords 0.002 0.146 0.009
+       angleY -7.124
+      }
+      $grp GenericEntity : "{9517AF85F0F56BD8}Prefabs/Stores/BuyItem/BuyItemPrefabEquipment.et" {
+       BuyM70_Top {
+        components {
+         ActionsManagerComponent "{598545F02D7CB638}" {
+          ActionContexts {
+           UserActionContext "{598545F017B19402}" {
+            Radius 1.5
+           }
+          }
+          additionalActions {
+           RL_BuyItem "{598545F028F35043}" {
+            m_ItemExchangedFor "{06BC3F18B47799AE}Prefabs/Characters/Uniforms/Pants_M70.et"
+            m_ItemName "M70 Top"
+           }
+          }
+         }
+        }
+        coords -0.004 1.382 0.019
+        angleX 0
+        angleY -119.755
+        angleZ 0
+       }
+       BuyM70_Bottom {
+        components {
+         ActionsManagerComponent "{598545F02D7CB638}" {
+          ActionContexts {
+           UserActionContext "{598545F017B19402}" {
+            Radius 1.5
+           }
+          }
+         }
+        }
+        coords -0.01 0.947 -0.005
+        angleX 0
+        angleY -119.755
+        angleZ 0
+       }
+      }
+     }
+    }
+    BDU_Bottom {
+     components {
+      MeshObject "{598560610F12DB5C}" {
+       Object "{F3675A241847B157}Assets/Characters/Uniforms/Pants_BDU_M81/Pants_BDU_M81.xob"
+      }
+     }
+     coords -9.205 -0.213 0.512
+     angleY 1.595
+     {
+      GenericEntity BDU_Top {
+       components {
+        MeshObject "{598560668FE95857}" {
+         Object "{6075675D15317A2D}Assets/Characters/Uniforms/Jacket_BDU_M81/Jacket_BDU_M81.xob"
+        }
+       }
+       coords 0.016 0.143 0.017
+       angleY 10.197
+      }
+      $grp GenericEntity : "{9517AF85F0F56BD8}Prefabs/Stores/BuyItem/BuyItemPrefabEquipment.et" {
+       BuyBDU_Top {
+        components {
+         ActionsManagerComponent "{598545F02D7CB638}" {
+          ActionContexts {
+           UserActionContext "{598545F017B19402}" {
+            Radius 1.5
+           }
+          }
+          additionalActions {
+           RL_BuyItem "{598545F028F35043}" {
+            m_ItemExchangedFor "{C7861F11D5334C0E}Prefabs/Characters/Uniforms/Jacket_US_BDU.et"
+            m_ItemName "BDU Top"
+            m_ItemPrice 10
+           }
+          }
+         }
+        }
+        coords 0.013 1.425 0.03
+        angleX 0
+        angleY -117.563
+        angleZ 0
+       }
+       BuyBDU_Bottom {
+        components {
+         ActionsManagerComponent "{598545F02D7CB638}" {
+          ActionContexts {
+           UserActionContext "{598545F017B19402}" {
+            Radius 1.5
+           }
+          }
+          additionalActions {
+           RL_BuyItem "{598545F028F35043}" {
+            m_ItemExchangedFor "{604BB72BE8E023C2}Prefabs/Characters/Uniforms/Pants_US_BDU.et"
+            m_ItemName "BDU Bottom"
+            m_ItemPrice 10
+           }
+          }
+         }
+        }
+        coords 0.021 0.882 0.02
+        angleX 0
+        angleY -117.563
+        angleZ 0
+       }
+      }
+     }
+    }
+    M88_Rolled_Bottom {
+     components {
+      MeshObject "{5985606102864BE9}" {
+       Object "{1094DDE5E932B418}Assets/Characters/Uniforms/Pants_M88/Pants_M88_01.xob"
+      }
+     }
+     coords -12.274 -0.173 0.654
+     angleY -1.411
+     {
+      GenericEntity M88_Rolled_Top {
+       components {
+        MeshObject "{59856066D60BB214}" {
+         Object "{99DD45795E81EFAB}Assets/Characters/Uniforms/Jacket_M88/Jacket_M88_01.xob"
+        }
+       }
+       coords 0.012 0.101 0.018
+       angleY 4.887
+      }
+      $grp GenericEntity : "{9517AF85F0F56BD8}Prefabs/Stores/BuyItem/BuyItemPrefabEquipment.et" {
+       BuyM88_Top {
+        components {
+         ActionsManagerComponent "{598545F02D7CB638}" {
+          ActionContexts {
+           UserActionContext "{598545F017B19402}" {
+            Radius 1.5
+           }
+          }
+          additionalActions {
+           RL_BuyItem "{598545F028F35043}" {
+            m_ItemExchangedFor "{E44990162EBC47B7}Prefabs/Characters/Uniforms/Jacket_M88_base.et"
+            m_ItemName "M88 Top"
+           }
+          }
+         }
+        }
+        coords -0.004 1.34 -0.003
+        angleX 0
+        angleY -114.557
+        angleZ 0
+       }
+       M88_Bottom_2 {
+        components {
+         ActionsManagerComponent "{598545F02D7CB638}" {
+          ActionContexts {
+           UserActionContext "{598545F017B19402}" {
+            Radius 1.5
+           }
+          }
+          additionalActions {
+           RL_BuyItem "{598545F028F35043}" {
+            m_ItemExchangedFor "{DCF980831E880F6A}Prefabs/Characters/Uniforms/Pants_M88.et"
+            m_ItemName "M88 Bottom"
+           }
+          }
+         }
+        }
+        coords -0.022 0.778 -0.017
+        angleX 0
+        angleY -114.557
+        angleZ 0
+       }
+      }
+     }
+    }
+    M88_Bottom {
+     components {
+      MeshObject "{5985606178A36358}" {
+       Object "{24121D249C4B5F0A}Assets/Characters/Uniforms/Pants_M88/Pants_M88_01_tucked.xob"
+      }
+     }
+     coords -10.154 -0.274 0.54
+     angleY 1.444
+     {
+      GenericEntity M88_Top {
+       components {
+        MeshObject "{598560613EB21137}" {
+         Object "{D9E721215D2BC00F}Assets/Characters/Uniforms/Jacket_M88/Jacket_M88_01_rolledup.xob"
+        }
+       }
+       coords 0.006 0.124 0.011
+       angleY -1.428
+      }
+      $grp GenericEntity : "{9517AF85F0F56BD8}Prefabs/Stores/BuyItem/BuyItemPrefabEquipment.et" {
+       BuyM88_Rolled_Top {
+        components {
+         ActionsManagerComponent "{598545F02D7CB638}" {
+          ActionContexts {
+           UserActionContext "{598545F017B19402}" {
+            Radius 1.5
+           }
+          }
+          additionalActions {
+           RL_BuyItem "{598545F028F35043}" {
+            m_ItemExchangedFor "{D262D2102B9931C6}Prefabs/Characters/Uniforms/Jacket_M88_rolledup.et"
+            m_ItemName "M88 Rolled Top"
+            m_ItemPrice 10
+           }
+          }
+         }
+        }
+        coords -0.028 1.357 -0.019
+        angleX 0
+        angleY -117.412
+        angleZ 0
+       }
+       BuyM88_Rolled_Bottom {
+        components {
+         ActionsManagerComponent "{598545F02D7CB638}" {
+          ActionContexts {
+           UserActionContext "{598545F017B19402}" {
+            Radius 1.5
+           }
+          }
+         }
+        }
+        coords 0 0.9 0.029
+        angleX 0
+        angleY -117.412
+        angleZ 0
+       }
+      }
+     }
+    }
+    BuyAK47 {
+     components {
+      MeshObject "{5985607DAF0D58F2}" {
+       Object "{BA5449C606206A19}Assets/Weapons/Rifles/AK74/ak74_body.xob"
+      }
+     }
+     coords -17.111 1.165 2.464
+     angleY 179.056
+     {
+      GenericEntity BuyAk47_Prefab : "{9517AF85F0F56BD8}Prefabs/Stores/BuyItem/BuyItemPrefabEquipment.et" {
+       components {
+        ActionsManagerComponent "{598545F02D7CB638}" {
+         additionalActions {
+          RL_BuyItem "{598545F028F35043}" {
+           m_ItemExchangedFor "{FA5C25BF66A53DCF}Prefabs/Weapons/Rifles/AK74/Rifle_AK74.et"
+           m_ItemName "AK47"
+           m_ItemPrice 50
+          }
+         }
+        }
+       }
+       coords -0.001 0.09 0.213
+       angleX 0
+       angleY 64.976
+       angleZ 0
+      }
+     }
+    }
+    BuyM16 {
+     components {
+      MeshObject "{5985607DE8EBD4CD}" {
+       Object "{C88615A558BF012C}Assets/Weapons/Rifles/M16A2/M16A2_body.xob"
+      }
+     }
+     coords -17.117 1.105 3.463
+     angleY -177.385
+     {
+      GenericEntity BuyM16_Prefab : "{9517AF85F0F56BD8}Prefabs/Stores/BuyItem/BuyItemPrefabEquipment.et" {
+       components {
+        ActionsManagerComponent "{598545F02D7CB638}" {
+         additionalActions {
+          RL_BuyItem "{598545F028F35043}" {
+           m_ItemExchangedFor "{C63227C0E70EA62E}Prefabs/Weapons/Rifles/M16/Rifle_M16A2_base.et"
+           m_ItemName "M16"
+           m_ItemPrice 80
+          }
+         }
+        }
+       }
+       coords -0.001 0.074 0.073
+       angleX 0
+       angleY 61.417
+       angleZ 0
+      }
+     }
+    }
+    BuySVD {
+     components {
+      MeshObject "{5985607C20EDCB3E}" {
+       Object "{DBB4CBF206BDFB3C}Assets/Weapons/Rifles/SVD/SVD_body.xob"
+      }
+     }
+     coords -17.086 1.067 4.683
+     angleY -178.259
+     {
+      GenericEntity BuySVD_Prefab : "{9517AF85F0F56BD8}Prefabs/Stores/BuyItem/BuyItemPrefabEquipment.et" {
+       components {
+        ActionsManagerComponent "{598545F02D7CB638}" {
+         additionalActions {
+          RL_BuyItem "{598545F028F35043}" {
+           m_ItemExchangedFor "{3EB02CDAD5F23C82}Prefabs/Weapons/Rifles/SVD/Rifle_SVD.et"
+           m_ItemName "SVD"
+          }
+         }
+        }
+       }
+       coords 0.003 0.071 0.154
+       angleX 0
+       angleY 62.291
+       angleZ 0
+      }
+     }
+    }
+   }
+   GenericEntity BuyRifle : "{9517AF85F0F56BD8}Prefabs/Stores/BuyItem/BuyItemPrefabEquipment.et" {
+    components {
+     ActionsManagerComponent "{598545F02D7CB638}" {
+      ActionContexts {
+       UserActionContext "{598545F017B19402}" {
+        Radius 1.5
+       }
+      }
+      additionalActions {
+       RL_BuyItem "{598545F028F35043}" {
+        m_ItemExchangedFor "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et"
+        m_ItemName "M14"
+        m_ItemPrice 100
+       }
+      }
+     }
+    }
+    coords -17.113 1.29 1.055
+    angleX 0
+    angleY -86.65
+    angleZ 0
+    {
+     GenericEntity M21 {
+      components {
+       MeshObject "{59856062C556BD2F}" {
+        Object "{F70651096E49F939}Assets/Weapons/Rifles/M14/M21_body.xob"
+       }
+      }
+      coords 206.75 -67 19
+      angleY -93.279
+      scale 1000
+     }
+    }
+   }
    $grp GenericEntity : "{B7669B7F8B7923F6}Prefabs/Props/Commercial/ShelfShop_01.et" {
     {
      coords -7.449 0 0.071
@@ -89,27 +855,4 @@ $grp GenericEntity : "{B7669B7F8B7923F6}Prefabs/Props/Commercial/ShelfShop_01.et
    }
   }
  }
-}
-GenericEntity SellApple : "{C9D661E5B0714711}Prefabs/Items/Food/Apple.et" {
- components {
-  InventoryItemComponent "{5222EB4D0C73006B}" {
-   Enabled 0
-  }
-  SCR_ConsumableItemComponent "{5966FECAA294E6A7}" {
-   Enabled 0
-  }
-  ActionsManagerComponent "{508AB5952B584B2E}" {
-   additionalActions {
-    RL_SellItem "{51EC842E3A187379}" {
-     Duration 1
-     m_ExchangeItemDisplayName "Apple"
-     m_ItemExchangedFor "{18983891B9E2262E}Prefabs/Items/Money/Money.et"
-     m_ItemPrice 2
-    }
-   }
-  }
- }
- coords 4472.113 3.785 11119.635
- angleY 29.209
- scale 2
 }

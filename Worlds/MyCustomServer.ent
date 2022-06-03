@@ -22,3 +22,12 @@ Layer MarijuanaField {
 Layer IronMine {
  Index 6
 }
+Layer TreeFarm {
+ Index 7
+}
+Layer Vehicles {
+ Index 8
+}
+Layer Temp {
+ Index 9
+}

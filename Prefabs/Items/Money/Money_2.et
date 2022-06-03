@@ -1,0 +1,20 @@
+GenericEntity : "{18983891B9E2262E}Prefabs/Items/Money/Money.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName UIInfo "{5222EB4D07D865FA}" {
+     Name "Money"
+     Description "One dollar bill"
+     Icon "{2C2AD803FC6EF735}3dModels/Money/tex/stacks_diffuse_no_ao.edds"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.001
+     ItemVolume 0.00000001
+    }
+   }
+  }
+ }
+ coords 4444.375 5.791 11210.563
+ scale 0.1
+}

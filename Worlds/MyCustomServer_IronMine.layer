@@ -1,21 +1,153 @@
-Tree RL_IronOre : "{EB1FCEB0BE00DB42}Prefabs/Plants/RL_AppleTree.et" {
- components {
-  MeshObject "{02E2273E851D0152}" {
-   Object "{1DD3C4030A3F4448}Assets/Rocks/Granite/GraniteBeachStone_01_Fucus.xob"
-  }
-  ActionsManagerComponent "{596540948BBDD481}" {
-   ActionContexts {
-    UserActionContext "{5965409488C45647}" {
-     Radius 1.5
+$grp Tree : "{EB1FCEB0BE00DB42}Prefabs/Plants/RL_AppleTree.et" {
+ RL_IronOre {
+  components {
+   MeshObject "{02E2273E851D0152}" {
+    Object "{1DD3C4030A3F4448}Assets/Rocks/Granite/GraniteBeachStone_01_Fucus.xob"
+   }
+   SCR_MapDescriptorComponent "{59854D68F7B6F9FA}" {
+    DisplayName "Iron Mine"
+    MainType Task
+   }
+   ActionsManagerComponent "{596540948BBDD481}" {
+    ActionContexts {
+     UserActionContext "{5965409488C45647}" {
+      Radius 1.5
+     }
+    }
+    additionalActions {
+     EL_GatherAction "{59654094806921B6}" {
+      m_GatherItemDisplayName "Iron Bar"
+      m_GatherItemPrefab "{7E65C441726DFB2F}Prefabs/Items/Iron Bar/IronBar.et"
+     }
     }
    }
-   additionalActions {
-    EL_GatherAction "{59654094806921B6}" {
-     m_GatherItemDisplayName "Iron Bar"
-     m_GatherItemPrefab "{7E65C441726DFB2F}Prefabs/Items/Iron Bar/IronBar.et"
-    }
-   }
   }
+  coords 5007.695 0.001 9672.131
  }
- coords 4444.68 0.001 11194.902
+ RL_IronOre2 {
+  components {
+   MeshObject "{02E2273E851D0152}" {
+    Object "{1DD3C4030A3F4448}Assets/Rocks/Granite/GraniteBeachStone_01_Fucus.xob"
+   }
+   ActionsManagerComponent "{596540948BBDD481}" {
+    ActionContexts {
+     UserActionContext "{5965409488C45647}" {
+      Radius 1.5
+     }
+    }
+    additionalActions {
+     EL_GatherAction "{59654094806921B6}" {
+      m_GatherItemDisplayName "Iron Bar"
+      m_GatherItemPrefab "{7E65C441726DFB2F}Prefabs/Items/Iron Bar/IronBar.et"
+     }
+    }
+   }
+  }
+  coords 5000.028 0.001 9673.084
+ }
+ RL_IronOre3 {
+  components {
+   MeshObject "{02E2273E851D0152}" {
+    Object "{1DD3C4030A3F4448}Assets/Rocks/Granite/GraniteBeachStone_01_Fucus.xob"
+   }
+   ActionsManagerComponent "{596540948BBDD481}" {
+    ActionContexts {
+     UserActionContext "{5965409488C45647}" {
+      Radius 1.5
+     }
+    }
+    additionalActions {
+     EL_GatherAction "{59654094806921B6}" {
+      m_GatherItemDisplayName "Iron Bar"
+      m_GatherItemPrefab "{7E65C441726DFB2F}Prefabs/Items/Iron Bar/IronBar.et"
+     }
+    }
+   }
+  }
+  coords 5003.288 0.277 9677.771
+ }
+ RL_IronOre4 {
+  components {
+   MeshObject "{02E2273E851D0152}" {
+    Object "{1DD3C4030A3F4448}Assets/Rocks/Granite/GraniteBeachStone_01_Fucus.xob"
+   }
+   ActionsManagerComponent "{596540948BBDD481}" {
+    ActionContexts {
+     UserActionContext "{5965409488C45647}" {
+      Radius 1.5
+     }
+    }
+    additionalActions {
+     EL_GatherAction "{59654094806921B6}" {
+      m_GatherItemDisplayName "Iron Bar"
+      m_GatherItemPrefab "{7E65C441726DFB2F}Prefabs/Items/Iron Bar/IronBar.et"
+     }
+    }
+   }
+  }
+  coords 4994.643 -0.085 9682.989
+ }
+ RL_IronOre5 {
+  components {
+   MeshObject "{02E2273E851D0152}" {
+    Object "{1DD3C4030A3F4448}Assets/Rocks/Granite/GraniteBeachStone_01_Fucus.xob"
+   }
+   ActionsManagerComponent "{596540948BBDD481}" {
+    ActionContexts {
+     UserActionContext "{5965409488C45647}" {
+      Radius 1.5
+     }
+    }
+    additionalActions {
+     EL_GatherAction "{59654094806921B6}" {
+      m_GatherItemDisplayName "Iron Bar"
+      m_GatherItemPrefab "{7E65C441726DFB2F}Prefabs/Items/Iron Bar/IronBar.et"
+     }
+    }
+   }
+  }
+  coords 5010.196 0.313 9682.705
+ }
+ RL_IronOre6 {
+  components {
+   MeshObject "{02E2273E851D0152}" {
+    Object "{1DD3C4030A3F4448}Assets/Rocks/Granite/GraniteBeachStone_01_Fucus.xob"
+   }
+   ActionsManagerComponent "{596540948BBDD481}" {
+    ActionContexts {
+     UserActionContext "{5965409488C45647}" {
+      Radius 1.5
+     }
+    }
+    additionalActions {
+     EL_GatherAction "{59654094806921B6}" {
+      m_GatherItemDisplayName "Iron Bar"
+      m_GatherItemPrefab "{7E65C441726DFB2F}Prefabs/Items/Iron Bar/IronBar.et"
+     }
+    }
+   }
+  }
+  coords 5003.196 0.334 9687.579
+ }
+ RL_IronOre7 {
+  components {
+   MeshObject "{02E2273E851D0152}" {
+    Object "{1DD3C4030A3F4448}Assets/Rocks/Granite/GraniteBeachStone_01_Fucus.xob"
+   }
+   ActionsManagerComponent "{596540948BBDD481}" {
+    ActionContexts {
+     UserActionContext "{5965409488C45647}" {
+      Radius 1.5
+     }
+    }
+    additionalActions {
+     EL_GatherAction "{59654094806921B6}" {
+      m_GatherItemDisplayName "Iron Bar"
+      m_GatherItemPrefab "{7E65C441726DFB2F}Prefabs/Items/Iron Bar/IronBar.et"
+     }
+    }
+   }
+  }
+  coords 5010.149 0.21 9690.385
+ }
 }

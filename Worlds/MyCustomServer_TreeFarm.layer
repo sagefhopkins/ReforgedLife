@@ -1,0 +1,59 @@
+$grp Tree : "{714A75D06B88A57C}Prefabs/Plants/RL_Tree.et" {
+ {
+  components {
+   SCR_MapDescriptorComponent "{59854D6D3480288D}" {
+    DisplayName "Lumber Farm"
+    MainType Task
+    Faction 1
+   }
+  }
+  coords 4327.531 0.001 9992.683
+ }
+ {
+  coords 4333.597 0.001 9990.616
+ }
+ {
+  coords 4321.459 0.001 9995.079
+ }
+ {
+  coords 4335.942 0.001 9994.266
+ }
+ {
+  coords 4340.337 0.001 10008.15
+ }
+ {
+  coords 4339.827 0.001 10001.411
+ }
+ {
+  components {
+   SCR_MapDescriptorComponent "{59854D689BC2E574}" {
+    DisplayName "Lumber Farm"
+   }
+  }
+  coords 4336.281 0.001 10011.229
+ }
+ {
+  coords 4325.75 0.001 10001.805
+ }
+ {
+  coords 4330.121 0.001 10006.12
+ }
+ {
+  coords 4333.279 0.001 10009.19
+ }
+ {
+  coords 4334.309 0.001 10002.682
+ }
+ {
+  coords 4337.29 0.001 9998.229
+ }
+ {
+  coords 4343.253 0.001 10004.995
+ }
+ {
+  coords 4337.548 0.001 10004.935
+ }
+ {
+  coords 4330.808 0.001 9997.535
+ }
+}

@@ -1,5 +1,11 @@
 $grp Tree : "{A3FD07643587C14D}Prefabs/Plants/RL_MarijuanaPlant.et" {
  {
+  components {
+   SCR_MapDescriptorComponent "{59854D68803E96CA}" {
+    DisplayName "Marijuana Field"
+    MainType Task
+   }
+  }
   coords 3949.103 0.001 10462.129
  }
  {
@@ -32,13 +38,4 @@ $grp Tree : "{A3FD07643587C14D}Prefabs/Plants/RL_MarijuanaPlant.et" {
  {
   coords 3947.412 0.001 10464.314
  }
-}
-Vehicle M151A1 : "{F649585ABB3706C4}Prefabs/Vehicles/Wheeled/M151A2/M151A2.et" {
- components {
-  SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
-   m_fVehicleDestroyDamage 10408.7
-  }
- }
- coords 4447.336 5.782 11202.845
- angleY -175.624
 }

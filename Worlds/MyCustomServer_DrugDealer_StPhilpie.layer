@@ -36,12 +36,16 @@ GenericEntity SellMarijuana : "{C9D661E5B0714711}Prefabs/Items/Food/Apple.et" {
   SCR_ConsumableItemComponent "{5966FECAA294E6A7}" {
    Enabled 0
   }
+  SCR_MapDescriptorComponent "{59854D68EF77D0B8}" {
+   DisplayName "Drug Dealer"
+   MainType Task
+  }
   ActionsManagerComponent "{508AB5952B584B2E}" {
    additionalActions {
     RL_SellItem "{51EC842E3A187379}" {
      Duration 1
      m_ExchangeItemDisplayName "Marijuana"
-     m_ItemExchangedFor "{18983891B9E2262E}Prefabs/Items/Money/Money.et"
+     m_ItemExchangedFor "{AA9931112021B5D3}Prefabs/Items/Money/Money_2.et"
      m_ItemPrice 15
     }
    }
